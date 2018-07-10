@@ -1,23 +1,9 @@
-const divMain = document.getElementById('main')
+const divMain = document.getElementById("main");
 
-const render = (html) => divMain.innerHtml = html
+const render = html => (divMain.innerHtml = html);
 
 const content = `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div>
 CONCEPTION / DEVELOPPEMENT
 
 Environnement windows, linux Release Debian (Ubuntu)
@@ -30,8 +16,8 @@ Connaissances : HTML5, CSS3, BOOTSTRAP, Json,   Jquery, XML, XSD, XSLT, SGBT
 Langues : Anglais : Lu, parlé et écrit, Allemand : Scolaire
 
 
-
-
+</div>
+<div>
 
 
 2018 :		Projet Gyvit Pour la société Meduza
@@ -46,8 +32,8 @@ Langues : Anglais : Lu, parlé et écrit, Allemand : Scolaire
 		Pour diverses société marnaises, parisiennes, lozériennes
 
 
-
-
+</div>
+<div>
 
 
 
@@ -62,7 +48,7 @@ Langues : Anglais : Lu, parlé et écrit, Allemand : Scolaire
 			BTS Technicien Supérieur en Maintenance et Services en Informatique
 
 1990-1996 :	U.F.R. Sciences de REIMS (51)
-			Licence E.E.A.
-`
-	
-render(content)
+      Licence E.E.A.
+</div>
+`;
+render(content);
